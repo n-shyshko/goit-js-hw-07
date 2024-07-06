@@ -11,7 +11,106 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
+
+input {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #2e2f42;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+/* Styles for task-1 */
+ul#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  background-color: #fff;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background-color: #f6f6fe;
+}
+
+.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #2e2f42;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
+/* Styles for task-1 */
+ul#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  background-color: #fff;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background-color: #f6f6fe;
+}
+
+.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #2e2f42;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 
 /* Styles for Task-2 */
 
@@ -49,11 +148,11 @@ body {
 
 
 #name-input::placeholder {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #2e2f42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 h1 {
@@ -65,12 +164,135 @@ h1 {
 }
 
 #name-output {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.33333;
-letter-spacing: 0.04em;
-color: #2e2f42;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 /* Styles for Task-4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  gap: 8px;
+  background-color: #fff;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.login-form button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border: none;
+  background-color: #4e75ff;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+.login-form label {
+  color: #2e2f42;
+}
+
+.login-form input:focus,
+.login-form input:active {
+  border-color: #808080;
+}
+
+/* Styles for Task-5 */
+
+.widget p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;  
+}
+
+.change-color {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
+}
+
+/* Styles for task-6 */
+div#controls {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+div#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  background-color: #f6f6fe;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+button[data-create] {
+  width: 120px;
+}
+
+button[data-destroy] {
+  width: 120px;
+  background-color: #ff4e4e;
+}
+
+button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+div#boxes {
+  border-radius: 8px;
+  padding: 32px;
+  height: 134px;
+  background-color: #f6f6fe;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+}
+
+
 
