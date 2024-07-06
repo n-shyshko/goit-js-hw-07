@@ -31,14 +31,14 @@ function andleSqrDestroy() {
 
 function createBoxes(amount) {
   const boxes = [];
-  let initialWidth = 30;
-  let initialHeight = 30;
+  let initWidth = 30;
+  let initHeight = 30;
   for (let index = 0; index < amount; index += 1) {
     const boxRandomColor = getRandomHexColor();
-    let box = `<div class="js-box" style="background-color:${boxRandomColor};width: ${initialWidth}px; height: ${initialHeight}px"></div>`;
+    let box = `<div class="js-box" style="background-color:${boxRandomColor};width: ${initWidth}px; height: ${initHeight}px"></div>`;
     boxes.push(box);
-    initialWidth += 10;
-    initialHeight += 10;
+    initWidth += 10;
+    initHeight += 10;
   }
    refs.boxesContainer.innerHTML = boxes.join(""); 
   }
