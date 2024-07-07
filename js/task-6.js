@@ -12,7 +12,7 @@ const refs = {
 }
 
 refs.createBtn.addEventListener("click", handleSqrCreation);
-refs.destroyBtn.addEventListener("click", andleSqrDestroy);
+refs.destroyBtn.addEventListener("click", handleSqrDestroy);
 
 function handleSqrCreation() {
   let number = parseInt(refs.number.value);
@@ -25,7 +25,7 @@ function handleSqrCreation() {
   refs.number.value = null;
 }
 
-function andleSqrDestroy() {
+function handleSqrDestroy() {
   destroyBoxes()
  }
 
@@ -33,7 +33,7 @@ function createBoxes(amount) {
   const boxes = [];
   let initWidth = 30;
   let initHeight = 30;
-  for (let index = 0; index < amount; index += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const boxRandomColor = getRandomHexColor();
     let box = `<div class="js-box" style="background-color:${boxRandomColor};width: ${initWidth}px; height: ${initHeight}px"></div>`;
     boxes.push(box);
